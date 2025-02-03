@@ -18,79 +18,733 @@
   <main>
 
     <!-- Navbar -->
-    <section id="navbar">
 
-      <nav class="sora bg-white-800 text-white p-4 md:w-11/12 mx-auto">
-        <div class="container mx-auto flex justify-between items-center">
-          <!-- Logo -->
-          <div class="">
-            <img class="w-auto h-9 sm:block md:hidden" src="./c2-assets/Group.png" alt="Mobile Logo">
-            <img class="w-auto h-9 hidden md:block" src="./c2-assets/logo-header.png" alt="Desktop Logo">
+    <div class="bg-linear-to-r from-white to-[#EFEBE3]">
+      <section id="navbar" class="sora border md:border-hidden border-green-700 md:-mb-2 mb-5">
+
+
+        <nav class=" bg-white-800 text-white p-4 md:w-11/12 mx-auto">
+          <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="">
+              <img class="md:hidden !h-9 z-1 !w-11" src="./c2-assets/Group.png" alt="Mobile Logo">
+              <img class="hidden md:block h-9" src="./c2-assets/logo-header.png" alt="Desktop Logo">
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="md:flex gap-8 ml-20 text-black hidden">
+              <li><a href="#" class="hover:text-green-300 transition duration-300">Product</a></li>
+              <li><a href="#" class="hover:text-green-300 transition duration-300">Services</a></li>
+              <li><a href="#" class="hover:text-green-300 transition duration-300">Contact us</a></li>
+            </ul>
+
+            <!-- Login/Register Buttons -->
+            <div class="md:flex space-x-4 text-black items-center text-sm hidden">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <a href="#"
+                class="bg-white-600 px-5 py-1 rounded hover:bg-white-700 transition duration-300 border rounded-md border-green-700 hover:bg-purple-800">Login</a>
+              <a href="#"
+                class="bg-green-700 text-white px-6 py-1 flex items-center rounded rounded-md hover:bg-green-700 transition duration-300 hover:bg-green-900">Register</a>
+            </div>
           </div>
-  
-          <!-- Navigation Links -->
-          <ul class="flex space-x-6 text-black ml-80">
-            <li><a href="#" class="hover:text-green-300 transition duration-300">Product</a></li>
-            <li><a href="#" class="hover:text-green-300 transition duration-300">Services</a></li>
-            <li><a href="#" class="hover:text-green-300 transition duration-300">Contact us</a></li>
-          </ul>
-  
-          <!-- Login/Register Buttons -->
-          <div class="flex space-x-4 text-black flex items-center text-sm ">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <a href="#"
-              class="bg-white-600 px-5 py-1 rounded hover:bg-white-700 transition duration-300 border rounded-md border-green-700 hover:bg-purple-800">Login</a>
-            <a href="#"
-              class="bg-green-700 text-white px-6 py-1 flex items-center rounded rounded-md hover:bg-green-700 transition duration-300 hover:bg-green-900">Register</a>
+        </nav>
+
+      </section>
+
+      <!-- Banner Section -->
+
+      <section id="banner">
+
+        <div class="h-[461px] md:h-[700px] sora">
+          <div class=" inset-0 flex flex-col items-center justify-center text-center text-black md:pt-12">
+            <h1 class="md:text-3xl text-2xl font-bold leading-tight mb-4">
+              Freshness <span class="text-green-600"> You Can <br>
+                Count</span> On, Prices You'll Love!
+            </h1>
+            <p class="md:text-sm text-xs md:px-0 text-gray-700">
+              Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+              staples, we've got you covered every day!
+            </p>
+          </div>
+
+          <div>
+            <img src="./c2-assets/hero-vegetables.png" alt=""
+              class="w-full h-auto md:h-[500px] object-contain absolute mt-5 left-0">
           </div>
         </div>
-      </nav>
 
-    </section>
+      </section>
 
-    <!-- Banner Seection -->
-
-    <!-- <div class="relative h-[700px] md:h-[500px] overflow-hidden">  <img src="./c2-assets/hero-vegetables.png" alt="" class="w-full h-full object-cover">
-  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/50"></div>
-  <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-gray-800">
-    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-      Freshness You Can <br>
-      Count On, Prices You'll Love!
-    </h1>
-    <p class="text-base md:text-lg mb-8 px-4 md:px-0">
-      Shop your daily essentials at unbeatable prices. From fresh produce to pantry
-      staples, we've got you covered every day!
-    </p>
-    <div class="flex space-x-4">
-        <button class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-6 rounded-md">Shop Now</button>
-        <button class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-6 rounded-md border border-gray-300">Learn More</button>
     </div>
-  </div>
-</div> -->
-
-    <section id="banner">
-
-      <div class=" h-auto md:h-[500px] bg-white sora">
-        <div class=" inset-0 flex flex-col items-center justify-center text-center text-black md:pt-12">
-          <h1 class="md:text-3xl sm:text-2xl font-bold leading-tight mb-4">
-            Freshness <span class="text-green-600"> You Can <br>
-              Count</span> On, Prices You'll Love!
-          </h1>
-          <p class="md:text-sm sm:text-xs md:px-0 text-gray-700">
-            Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
-            staples, we've got you covered every day!
-          </p>
-        </div>
-        <div>
 
 
-          <img src="./c2-assets/hero-vegetables.png" alt=""
-            class="w-full h-auto md:h-[420px] object-contain absolute -bottom- left-0">
-        </div>
+    <!-- Services -->
+
+    <div class=" sora mx-auto py-15 md:w-11/12 mx-auto">
+      <div class="text-start mb-7">
+        <h2 class="text-3xl text-green-600 font-bold text-gray-800">Services</h2>
       </div>
 
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:w-full">
+
+        <div class="bg-[#EFEBE3] rounded-lg shadow-md p-6">
+          <div><img src="./c2-assets/service.png" alt="24/7 Service"
+              class="rounded-full bg-white p-4 w-33 h-33 mx-auto mb-4"></div>
+          <h3 class="text-xl font-semibold text-black mb-2">24/7 Services</h3>
+          <p class="text-gray-600">Reliable 24/7 services providing round-the-clock support for all your urgent needs,
+            anytime, anywhere.</p>
+        </div>
+
+        <div class="bg-[#EFEBE3] rounded-lg shadow-md p-6">
+          <img src="./c2-assets/delivery.png" alt="Fast Delivery"
+            class="rounded-full bg-white p-4 w-33 h-33 mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-black mb-2">Fast Delivery</h3>
+          <p class="text-gray-600">Efficient and fast delivery services ensuring your orders arrive quickly and on time,
+            every time.</p>
+        </div>
+
+        <div class="bg-[#EFEBE3] rounded-lg shadow-md p-6">
+          <img src="./c2-assets/healthy.png" alt="Healthy Products"
+            class="rounded-full bg-white p-4 w-33 h-33 mx-auto mb-4">
+          <h3 class="text-xl font-semibold text-black mb-2">Healthy Products</h3>
+          <p class="text-gray-600">High-quality, nutritious products designed to support a healthy lifestyle and promote
+            overall well-being.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Popular Section -->
+
+    <div class="container mx-auto px-5 md:px-13 py-12 bg-[#EFEBE3] sora">
+      <h2 class="text-2xl font-bold text-gray-800 mb-8 text-start  text-green-600">Popular Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+        <div class="md:col-span-1 bg-white rounded-lg shadow-md overflow-hidden relative">
+          <div class="bg-gradient-to-b from-lime-400 to-lime-600 p-6 text-white flex flex-col justify-between h-full">
+            <div>
+              <div class="text-2xl font-bold mb-4">30% off</div>
+              <p class="text-xs mb-6 text-black">Discover a world of treats, toys, and essentials handpicked for...</p>
+            </div>
+            <button class="bg-white text-lime-600 py-1 px-4 rounded-md font-medium hover:bg-lime-100 md:h-8 w-26
+                     flex items-center">Buy Now</button>
+          </div>
+          <img src="./c2-assets/vegetable-offer.png" alt="Large Product"
+            class="w-35 h-35 object-cover absolute bottom-0 right-2">
+        </div>
+
+        <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 col-span-1 gap-2">
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/onion.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-14 h-15 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.5</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Onion 1 KG</h3>
+              <p class="text-xs md:text-xs text-black">$4.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/onion.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-14 h-15 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.6</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Onion 3 KG</h3>
+              <p class="text-xs md:text-xs text-black">$6.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/onion.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-14 h-15 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.1</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Onion 5 KG</h3>
+              <p class="text-xs md:text-xs text-black">$8.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/image 41.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-13 h-14 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.4</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Tomato 1 KG</h3>
+              <p class="text-xs md:text-xs text-black">$3.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/image 41.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-12 h-14 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.8</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Tomato 3 KG</h3>
+              <p class="text-xs md:text-xs text-black">$6.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/image 41.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-12 h-14 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.9</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Tomato 5 KG</h3>
+              <p class="text-xs md:text-xs text-black">$7.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/image 44.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-14 h-15 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.6</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Potato 1 KG</h3>
+              <p class="text-xs md:text-xs text-black">$5.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/image 44.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-13 h-15 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>5.0</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Potato 3 KG</h3>
+              <p class="text-xs md:text-xs text-black">$7.99</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+            <img src="./c2-assets/image 44.png" alt="Onion"
+              class="rounded bg-[#EFEBE3] w-13 h-15 md:w-16 md:h-16 mr-2 md:mr-4">
+            <div>
+              <div class="flex items-center mb-1 text-xs md:text-xs">
+                <span class="text-yellow-400 mr-1">★</span> <span>4.9</span>
+              </div>
+              <h3 class="text-sm md:text-xs font-medium text-black mb-1">Potato 5 KG</h3>
+              <p class="text-xs md:text-xs text-black">$9.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer Section -->
+
+    <div class="container sora md:w-11/12 mx-auto px-5 md:px-0 py-12">
+      <h2 class="text-2xl font-bold text-green-600 mb-8 text-left">Arrival & Offers</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-[#115414] rounded-lg shadow-md flex md:flex-row h-50 md:h-auto md:w-160">
+          <div class="md:w-1/2 p-6 flex flex-col justify-between md:p-10">
+            <div>
+              <img src="./c2-assets/dawat-logo.png" alt="Daawat Logo" class="w-40 mb-7 md:mb-7">
+              <div
+                class="bg-[#63B76D] rounded-lg px-2 py-1 md:px-8 w-34 md:w-auto md:py-3 text-xs md:text-sm text-white font-sm inline-block mb-4 md:mb-8">
+                Cook Exotic Dishes
+              </div>
+              <p class="text-lg md:text-2xl font-medium text-white">UP to <span class="font-bold">20% OFF</span></p>
+            </div>
+
+          </div>
+          <div class="md:w-1/2">
+            <img src="./c2-assets/dawat-mock-up.png" alt="Daawat Biryani Rice"
+              class="w-full h-full object-cover p-4 rounded-r-lg">
+          </div>
+        </div>
+
+
+        <div class="bg-[#102861] rounded-lg shadow-md flex md:flex-row h-50 md:h-auto md:w-124 md:ml-17">
+          <div class="md:w-1/2 p-6 flex flex-col justify-between">
+            <div>
+              <img src="./c2-assets/india-gate-logo.png" alt="India Gate Logo" class="w-15 md:w-18 mb-4">
+              <div
+                class="bg-[#2A4D97] rounded-lg px-2 py-1 md:px-8 md:py-3 w-35 md:w-auto text-sm text-white font-medium inline-block mb-3 md:mb-7">
+                World's No.1 Rice
+              </div>
+              <p class="text:lg md:text-2xl font-medium text-white">UP to <span class="font-bold">40% OFF</span></p>
+            </div>
+
+          </div>
+          <div class="md:w-1/2">
+            <img src="./c2-assets/india-gate-mock-up.png" alt="India Gate Biryani"
+              class="w-full p-2 md:w-[180px] h-full object-cover rounded-r-lg ml-1 md:ml-10">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Reviews Section (Challenge) -->
+
+    <section class="py-5 relative sora">
+      <div class="w-11/12 max-w-auto px-4 md:px-5 lg:px-6 mx-auto">
+        <div class="">
+          <h2 class="font-manrope font-bold md:text-3xl text-2xl leading-10 text-green-600 mb-8 text-start">
+            Customer reviews &
+            rating</h2>
+          <div class="grid grid-cols-12 mb-11">
+
+            <div class="col-span-12 xl:col-span-4 flex items-center">
+              <div class="box flex flex-col gap-y-4 w-full max-xl:max-w-3xl mx-auto">
+                <div class="flex items-center w-full">
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">5</p>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_12042_8589)">
+                      <path
+                        d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                        fill="#FBBF24" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12042_8589">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="h-2 w-full sm:min-w-[278px] rounded-[30px] bg-gray-200 ml-5 mr-3">
+                    <span class="h-full w-[30%] rounded-[30px] bg-indigo-500 flex"></span>
+                  </p>
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">30</p>
+                </div>
+                <div class="flex items-center w-full">
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">4</p>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_12042_8589)">
+                      <path
+                        d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                        fill="#FBBF24" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12042_8589">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="h-2 w-full xl:min-w-[278px] rounded-[30px] bg-gray-200 ml-5 mr-3">
+                    <span class="h-full w-[40%] rounded-[30px] bg-indigo-500 flex"></span>
+                  </p>
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">40</p>
+                </div>
+                <div class="flex items-center">
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">3</p>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_12042_8589)">
+                      <path
+                        d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                        fill="#FBBF24" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12042_8589">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="h-2 w-full xl:min-w-[278px] rounded-[30px] bg-gray-200 ml-5 mr-3">
+                    <span class="h-full w-[20%] rounded-[30px] bg-indigo-500 flex"></span>
+                  </p>
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">20</p>
+                </div>
+                <div class="flex items-center">
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">2</p>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_12042_8589)">
+                      <path
+                        d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                        fill="#FBBF24" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12042_8589">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="h-2 w-full xl:min-w-[278px] rounded-[30px] bg-gray-200 ml-5 mr-3">
+                    <span class="h-full w-[16%] rounded-[30px] bg-indigo-500 flex"></span>
+                  </p>
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">16</p>
+                </div>
+                <div class="flex items-center">
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">1</p>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_12042_8589)">
+                      <path
+                        d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                        fill="#FBBF24" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12042_8589">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="h-2 w-full xl:min-w-[278px] rounded-[30px] bg-gray-200 ml-5 mr-3">
+                    <span class="h-full w-[8%] rounded-[30px] bg-indigo-500 flex"></span>
+                  </p>
+                  <p class="font-medium text-lg py-[1px] text-black mr-[2px]">8</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-12 max-xl:mt-8 xl:col-span-8 xl:pl-8 w-full min-h-[230px]">
+              <div
+                class="grid grid-cols-12 h-full px-8 max-lg:py-8 rounded-3xl bg-gray-100 w-full max-xl:max-w-3xl max-xl:mx-auto">
+                <div class="col-span-12 md:col-span-8 flex items-center">
+                  <div class="flex flex-col sm:flex-row items-center max-lg:justify-center w-full h-full">
+                    <div class="sm:pr-3 sm:border-r border-gray-200 flex items-center justify-center flex-col">
+                      <h2 class="font-manrope font-bold text-4xl text-black text-center mb-4">4.3</h2>
+                      <div class="flex items-center gap-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <p class="font-normal text-lg leading-8 text-gray-400">46 Ratings</p>
+                    </div>
+
+                    <div class="sm:pl-3 sm:border-l border-gray-200 flex items-center justify-center flex-col">
+                      <h2 class="font-manrope font-bold text-4xl text-black text-center mb-4">4.8</h2>
+                      <div class="flex items-center gap-3 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                          <g clip-path="url(#clip0_13624_3137)">
+                            <path
+                              d="M17.1033 2.71738C17.4701 1.97413 18.5299 1.97413 18.8967 2.71738L23.0574 11.1478C23.2031 11.4429 23.4846 11.6475 23.8103 11.6948L33.1139 13.0467C33.9341 13.1659 34.2616 14.1739 33.6681 14.7524L26.936 21.3146C26.7003 21.5443 26.5927 21.8753 26.6484 22.1997L28.2376 31.4656C28.3777 32.2825 27.5203 32.9055 26.7867 32.5198L18.4653 28.145C18.174 27.9919 17.826 27.9919 17.5347 28.145L9.21334 32.5198C8.47971 32.9055 7.62228 32.2825 7.76239 31.4656L9.35162 22.1997C9.40726 21.8753 9.29971 21.5443 9.06402 21.3146L2.33193 14.7524C1.73841 14.1739 2.06593 13.1659 2.88615 13.0467L12.1897 11.6948C12.5154 11.6475 12.7969 11.4429 12.9426 11.1478L17.1033 2.71738Z"
+                              fill="#FBBF24" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_13624_3137">
+                              <rect width="36" height="36" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <p class="font-normal text-lg leading-8 text-gray-400">Last Month</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-4 max-lg:mt-8 md:pl-8">
+                  <div class="flex items-center flex-col justify-center w-full h-full md:ml-5">
+                    <button
+                      class="rounded-full px-6 py-4 bg-indigo-600 font-semibold text-lg text-white whitespace-nowrap mb-6 w-full text-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-indigo-700 hover:shadow-indigo-400">Write
+                      A Review</button>
+                    <button
+                      class="rounded-full px-6 py-4 bg-white font-semibold text-lg text-indigo-600 whitespace-nowrap w-full text-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-indigo-100 hover:shadow-indigo-200">See
+                      All Reviews</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pb-8 border-b border-gray-200 max-xl:max-w-3xl max-xl:mx-auto">
+            <h4 class="font-manrope font-semibold text-2xl leading-10 text-black mb-2">Most helpful positive
+              review</h4>
+            <div class="flex sm:items-center flex-col sm:flex-row justify-between  mb-4">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <g clip-path="url(#clip0_13624_2974)">
+                    <path
+                      d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                      fill="#FBBF24" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_13624_2974">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <g clip-path="url(#clip0_13624_2974)">
+                    <path
+                      d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                      fill="#FBBF24" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_13624_2974">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <g clip-path="url(#clip0_13624_2974)">
+                    <path
+                      d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                      fill="#FBBF24" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_13624_2974">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <g clip-path="url(#clip0_13624_2974)">
+                    <path
+                      d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                      fill="#FBBF24" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_13624_2974">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <g clip-path="url(#clip0_13624_2974)">
+                    <path
+                      d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                      fill="#FBBF24" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_13624_2974">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="flex items-center gap-3">
+                <h6 class="font-semibold text-lg leading-8 text-black">@jhankar.mahbub</h6>
+                <p class="font-medium text-base leading-7 text-gray-400">Jan 22, 2025</p>
+              </div>
+            </div>
+
+            <p class="font-normal text-base leading-8 text-gray-500 ">
+              I recently purchased natural food items from this website and am thrilled with my experience! The
+              selection is impressive, offering high-quality products. The website is easy to navigate. Everything is
+              sustainably sourced and free from additives. My order arrived promptly and in perfect condition. I'll
+              definitely return for more natural options. Highly recommend.
+            </p>
+
+          </div>
+          <div class="flex flex-col sm:flex-row items-center justify-between md:pt-2 pb-10 md:pb-0 :max-xl:max-w-3xl max-xl:mx-auto">
+            <p class="font-normal text-lg py-[1px] md:hidden text-black">46 reviews</p>
+            <form>
+              <div class="flex">
+
+                <div class="relative">
+                  <div class=" absolute -left-0 px-2 top-0 py-2">
+                    <p class="font-normal text-lg leading-8 text-gray-500">Sort by:</p>
+
+                  </div>
+                  <input type="text"
+                    class="block w-60 h-11 pr-4 pl-20 py-2.5 text-base leading-8 font-medium rounded-full cursor-pointer shadow-xs text-black bg-transparent placeholder-black focus:outline-gray-200 "
+                    placeholder=" Most Relevant">
+                  <div id="dropdown-button" data-target="dropdown"
+                    class="dropdown-toggle flex-shrink-0 cursor-pointer z-10 inline-flex items-center py-2.5 px-4 text-base font-medium text-center text-gray-900 bg-transparent absolute right-0 top-2 pl-2 "
+                    type="button"><svg class="ml-2" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 1.5L4.58578 5.08578C5.25245 5.75245 5.58579 6.08579 6 6.08579C6.41421 6.08579 6.74755 5.75245 7.41421 5.08579L11 1.5"
+                        stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div id="dropdown"
+                    class="absolute top-9 right-0 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                      <li>
+                        <a href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Most
+                          Relevant</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">last
+                          week</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">oldest</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Card & Footer Section -->
+
+    <div class="bg-[#179800] text-white py-10 px-5 md:px-20 sora">
+      <div class="md:w-11/12 mx-auto">
+        <div class="flex justify-center">
+
+          <!-- Subscription Card -->
+          <div
+            class="bg-[#EFEBE3] p-6 rounded-xl shadow-lg md:flex md:items-center md:w-450 md:h-60 -mt-56 md:-mt-39.5">
+            <img src="./c2-assets/vegetable-busket.png" alt="Grocery Basket"
+              class="w-45 md:w-60 md:pt-6 md:ml-10 mx-auto md:mx-0 mb-5">
+            <div class="md:ml-30 text-center md:text-left">
+              <h2 class="text-xl font-bold text-green-600 md:text-black mb-2 ">Get Grocery News!</h2>
+              <p class="text-black">Exclusive training tips, ticks, product deals and more.</p>
+              <div class="mt-8">
+                <input type="email" placeholder="Enter email..."
+                  class="bg-white text-[#C4C4C4] w-full px-4 py-2 rounded-sm border:none md:mb-2">
+                <button
+                  class="mt-2 bg-[#179800] text-white text-sm px-6 py-2 rounded-lg hover:bg-green-800">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <!-- Footer Section -->
+        <div
+          class="mt-10 flex flex-col md:flex-row justify-between items-center items-start md:text-center md:text-left">
+          <div class="max-w-sm">
+            <img class="w-25 md:mb-3 mb-3" src="./c2-assets/logo-footer.png" alt="">
+            <p class="text-white font-thin mb-2">Discover a world of treats, toys, and essentials handpicked for your
+              furry friends</p>
+          </div>
+          <div
+            class="flex flex-col space-y-2 md:space-y-0 md:flex-col md:gap-6 font-light md:space-x-10 mt-5 md:mt-0 mb-3">
+            <a href="#" class="text-white hover:underline">Product</a>
+            <a href="#" class="text-white hover:underline">Services</a>
+            <a href="#" class="text-white hover:underline">Contact us</a>
+          </div>
+          <div class="mt-5 md:mt-0">
+            <h3 class="font-light">Follow Us</h3>
+            <div class="flex space-x-4 mt-2">
+              <a href="https://github.com/devsakibx/" class="text-white text-xl"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/devsakibx/" class="text-white text-xl"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/devsakibx/" class="text-white text-xl"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/devsakibx/" class="text-white text-xl"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </main>
 </body>
