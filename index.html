@@ -21,36 +21,42 @@
 
     <div class="bg-linear-to-r from-white to-[#EFEBE3]">
       <section id="navbar" class="sora border md:border-hidden border-green-700 md:-mb-2 mb-5">
-
-
-        <nav class=" bg-white-800 text-white p-4 md:w-11/12 mx-auto">
+        <nav class=" text-black p-4 md:w-11/12 mx-auto">
           <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <div class="">
+            <div>
               <img class="md:hidden !h-9 z-1 !w-11" src="./c2-assets/Group.png" alt="Mobile Logo">
               <img class="hidden md:block h-9" src="./c2-assets/logo-header.png" alt="Desktop Logo">
             </div>
 
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="md:hidden">
+              <button id="menu-toggle" class="text-green-700 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+              </button>
+            </div>
+
             <!-- Navigation Links -->
-            <ul class="md:flex gap-8 ml-20 text-black hidden">
+            <ul id="menu"
+              class="hidden md:flex gap-8 ml-20 text-black flex-col md:flex-row md:items-center absolute md:relative  left-12 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-5 md:p-0">
               <li><a href="#" class="hover:text-green-300 transition duration-300">Product</a></li>
               <li><a href="#" class="hover:text-green-300 transition duration-300">Services</a></li>
               <li><a href="#" class="hover:text-green-300 transition duration-300">Contact us</a></li>
             </ul>
 
             <!-- Login/Register Buttons -->
-            <div class="md:flex space-x-4 text-black items-center text-sm hidden">
+            <div class="hidden md:flex space-x-4 text-black items-center text-sm">
               <i class="fa-solid fa-magnifying-glass"></i>
               <i class="fa-solid fa-cart-shopping"></i>
-              <a href="#"
-                class="bg-white-600 px-5 py-1 rounded hover:bg-white-700 transition duration-300 border rounded-md border-green-700 hover:bg-purple-800">Login</a>
-              <a href="#"
-                class="bg-green-700 text-white px-6 py-1 flex items-center rounded rounded-md hover:bg-green-700 transition duration-300 hover:bg-green-900">Register</a>
+              <a href="#" class="border rounded-md border-green-700 px-5 py-1 hover:bg-gray-200">Login</a>
+              <a href="#" class="bg-green-700 text-white px-6 py-1 rounded-md hover:bg-green-900">Register</a>
             </div>
           </div>
         </nav>
-
       </section>
+
+
+
 
       <!-- Banner Section -->
 
@@ -121,13 +127,14 @@
       <h2 class="text-2xl font-bold text-gray-800 mb-8 text-start  text-green-600">Popular Products</h2>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
 
-        <div class="md:col-span-1 bg-white rounded-lg shadow-md overflow-hidden relative">
-          <div class="bg-gradient-to-b from-lime-400 to-lime-600 p-6 text-white flex flex-col justify-between h-full">
+        <div class="md:col-span-1 bg-white rounded-lg shadow-md overflow-hidden border border-green-700 relative">
+          <div class="bg-gradient-to-b from-lime-400 to-lime-600 p-6 text-white flex flex-col h-full">
             <div>
               <div class="text-2xl font-bold mb-4">30% off</div>
-              <p class="text-xs mb-6 text-black">Discover a world of treats, toys, and essentials handpicked for...</p>
+              <p class="text-xs mb-5 text-gray-600">Discover a world of treats, toys, and <br> essentials handpicked
+                for...</p>
             </div>
-            <button class="bg-white text-lime-600 py-1 px-4 rounded-md font-medium hover:bg-lime-100 md:h-8 w-26
+            <button class="bg-white text-black py-1 px-4 rounded-md font-sm hover:bg-lime-100 md:h-8 w-26
                      flex items-center">Buy Now</button>
           </div>
           <img src="./c2-assets/vegetable-offer.png" alt="Large Product"
@@ -232,7 +239,8 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-lg shadow-md flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20">
+          <div
+            class="bg-white rounded-lg shadow-md md:flex md:flex-row items-center p-2 md:p-4 w-full md:w-70 h-20 hidden">
             <img src="./c2-assets/image 44.png" alt="Onion"
               class="rounded bg-[#EFEBE3] w-13 h-15 md:w-16 md:h-16 mr-2 md:mr-4">
             <div>
@@ -635,7 +643,8 @@
             </p>
 
           </div>
-          <div class="flex flex-col sm:flex-row items-center justify-between md:pt-2 pb-10 md:pb-0 :max-xl:max-w-3xl max-xl:mx-auto">
+          <div
+            class="flex flex-col sm:flex-row items-center justify-between md:pt-2 pb-10 md:pb-0 :max-xl:max-w-3xl max-xl:mx-auto">
             <p class="font-normal text-lg py-[1px] md:hidden text-black">46 reviews</p>
             <form>
               <div class="flex">
