@@ -12,6 +12,41 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+  <style>
+    @keyframes bounce-color {
+
+      0%,
+      100% {
+        transform: translateY(0);
+        color: #0075ab;
+      }
+
+      /* Green */
+      25% {
+        transform: translateY(-5px);
+        color: #e11d4772;
+      }
+
+      /* Red */
+      50% {
+        transform: translateY(5px);
+        color: #000000;
+      }
+
+      /* Teal */
+      75% {
+        transform: translateY(-5px);
+        color: #f59e0b;
+      }
+
+      /* Yellow */
+    }
+
+    .animate-bounce-color {
+      animation: bounce-color 2.5s infinite ease-in-out;
+    }
+  </style>
+
 </head>
 
 <body class="mx-auto m-auto w-full">
@@ -20,7 +55,7 @@
     <!-- Navbar -->
 
     <div class="bg-linear-to-r from-white to-[#EFEBE3]">
-      <section id="navbar" class="sora border md:border-hidden border-green-700 md:-mb-2 mb-5">
+      <section id="navbar" class="sora border-y md:border-hidden border-green-700 md:-mb-2 mb-5">
         <nav class=" text-black p-4 md:w-11/12 mx-auto">
           <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
@@ -48,8 +83,10 @@
             <div class="hidden md:flex space-x-4 text-black items-center text-sm">
               <i class="fa-solid fa-magnifying-glass"></i>
               <i class="fa-solid fa-cart-shopping"></i>
-              <a href="#" class="border rounded-md border-green-700 px-5 py-1 hover:bg-gray-200">Login</a>
-              <a href="#" class="bg-green-700 text-white px-6 py-1 rounded-md hover:bg-green-900">Register</a>
+              <a href="https://devsakibx.github.io/natures-platter-login/"
+                class="border rounded-md border-green-700 px-5 py-1 hover:bg-gray-200">Login</a>
+              <a href="https://devsakibx.github.io/natures-platter-registration/" target="_blank"
+                class="bg-green-700 text-white px-6 py-1 rounded-md hover:bg-green-900">Register</a>
             </div>
           </div>
         </nav>
@@ -60,27 +97,26 @@
 
       <!-- Banner Section -->
 
-      <section id="banner">
+      <section id="banner" class="relative">
+        <div
+          class="h-[auto] md:h-[auto] sora flex flex-col items-center justify-center text-center text-black md:pt-10 px-4">
+          <h1 class="md:text-3xl text-2xl font-bold leading-tight md:mb-4 mb-5 animate-bounce-color">
+            Freshness <span class="text-green-600"> You Can <br> Count</span> On, Prices You'll Love!
+          </h1>
 
-        <div class="h-[461px] md:h-[700px] sora">
-          <div class=" inset-0 flex flex-col items-center justify-center text-center text-black md:pt-12">
-            <h1 class="md:text-3xl text-2xl font-bold leading-tight mb-4">
-              Freshness <span class="text-green-600"> You Can <br>
-                Count</span> On, Prices You'll Love!
-            </h1>
-            <p class="md:text-sm text-xs md:px-0 text-gray-700">
-              Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
-              staples, we've got you covered every day!
-            </p>
-          </div>
-
-          <div>
-            <img src="./c2-assets/hero-vegetables.png" alt=""
-              class="w-full h-auto md:h-[500px] object-contain absolute mt-5 left-0">
-          </div>
+          <p class="md:text-sm text-xs text-gray-700 mb-8">
+            Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+            staples, we've got you covered every day!
+          </p>
         </div>
 
+        <!-- Image Container -->
+        <div class="relative w-full flex justify-center">
+          <img src="./c2-assets/hero-vegetables.png" alt="Vegetables"
+            class="w-full md:w-[80%] h-auto md:h-[500px] object-cover md:object-contain">
+        </div>
       </section>
+
 
     </div>
 
@@ -127,7 +163,7 @@
       <h2 class="text-2xl font-bold text-gray-800 mb-8 text-start  text-green-600">Popular Products</h2>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
 
-        <div class="md:col-span-1 bg-white rounded-lg shadow-md overflow-hidden border border-green-700 relative">
+        <div class="md:col-span-1 bg-white rounded-lg shadow-md overflow-hidden relative">
           <div class="bg-gradient-to-b from-lime-400 to-lime-600 p-6 text-white flex flex-col h-full">
             <div>
               <div class="text-2xl font-bold mb-4">30% off</div>
